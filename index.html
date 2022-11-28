@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@500&family=Roboto:ital,wght@0,700;1,900&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+.background_color{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    background: linear-gradient(to left, #1C6758,#3D8361,#D6CDA4);
+    opacity: 0.8;
+    z-index: -2;
+}
+/*  HEADER */
+.navigation{
+    position: sticky;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0);
+    height: 110px;
+}
+.main_navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0px 100px;
+}
+.navigation_container{
+    position: relative;
+    width: 750px;
+    height: 70px;
+    background: #A1C298;
+    border-radius: 35px;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.navigation_container ul{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 100%;
+    list-style: none;
+}
+.navigation_container ul li a{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    font-size: 30px;
+    color: black;
+    position: relative;
+    margin: auto;
+    width: 80px;
+    text-align: center;
+}
+.navigation_container ul li span{
+    color: black;
+    text-decoration: none;
+}
+a{
+    text-decoration: none;
+}
+#title{
+    position: relative;
+    color: white;
+    font-size: 35px;
+    color: rgb(48, 120, 32);
+}
+#peace{
+    color: rgb(64, 136, 48);
+}
+.font_logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.font_logo ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 180px;
+}
+.font_logo ul li{
+    list-style: none;
+    font-size: 30px;
+}
+.font_logo ul li a{
+    color: #A1C298;
+}
+#title:hover{
+    transform: scale(1.4);
+    transition: 0.3s;
+}
+.title{
+    width: 80px;
+    text-align: center;
+}
+.title:hover, #home{
+    background-color: #1C6758;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+.logo:hover{
+    transform: translateY(-15px);
+    transition: 0.5s;
+}
+.font_logo li:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+/* HEADER */
+
+
+
+/* CONTAINER */
+.container{
+    position: relative;
+    height: 89vh;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(36, 33, 33, 0);
+}
+#birdy{
+    position: absolute;
+    height: 92%;
+    width: 35%;
+    left: -10px;
+    object-fit: cover;
+    transition: 0.5s;
+}
+#birdy:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+#birdy_mirror{
+    position: absolute;
+    height: 92%;
+    width: 35%;
+    left: 65%;
+    object-fit: cover;
+}
+#birdy_mirror:hover{
+    transform: scale(1.2);
+    transition: 0.5s;
+}
+.main_container{
+    position: relative;
+    height: 100%;
+    width: 900px;
+    margin: auto;
+    background-color: rgba(155, 68, 68, 0);
+}
+.main_container_title{
+    color: white;
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 25%;
+    left: 20%;
+}
+#container_title{
+    font-size: 40px;
+    font-weight: 30;
+}
+#green{
+    color: #94ED88;
+}
+#peace{
+    color: #3BB873;
+}
+.container_title{
+    position: absolute;
+    width: 100%;
+    height: 30vh;
+    background-color: rgba(148, 34, 34, 0);
+    top: 30%;
+}
+#save{
+    color: white;
+    font-weight: 500;
+    font-size: 96px;
+}
+#plant{
+    color: white;
+    font-size: 20px;
+    left: 30%;
+    position: absolute;
+}
+#join, #donate{
+    position: relative;
+    top: 20%;
+    left: 30%;
+    font-size: 15px;
+    font-weight: 900;
+    color: white;
+    background: linear-gradient(to right,#56aa55e3,#1C6758,#71d870c9);
+    border: none;
+    border-radius: 70px;
+    padding: 20px 30px;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+    width: 170px;
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+#join{
+    margin-right: 30px;
+}
+#join:hover{
+    color: black;
+    background: #1C6758;
+    transition-delay: 0s;
+    transform: scale(1.1);
+}
+#donate:hover{
+    color: black;
+    background: #1C6758;
+    transition: 0.3s;
+    transform: scale(1.1);
+}
+/* CONTAINER */
+
+
+
+/* FOOTER */
+#footer{
+    position: relative;
+    width: 1500px;
+    min-height: 89vh;
+    margin: auto;
+    background-color: rgba(255, 0, 0, 0);
+}
+.main_footer{
+    padding: 30px;
+    position: relative;
+    top: 25px;
+    width: 100%;
+    height: 80vh;
+    border: 3px solid;
+    color: #3D8361;
+    border-radius: 70px;
+}
+.main_footer p{
+    text-align: center;
+    font-size: 50px;
+    color: #94ED88;
+}
+.main_footer span{
+    color: #3BB873;
+}
+.main_footer p:hover{
+    transform: scale(1.2);
+    transition: 0.4s;
+}
+.box_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: 280px;
+}
+.box{
+    position: relative;
+    margin: auto;
+    width: 400px;
+    height: 200px;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+#box1{
+    grid-column: 1;
+    grid-row: 1;
+    background-color: #1C6758;
+}
+#box2{
+    grid-column: 2;
+    grid-row: 1;
+    background-color: #3D8361;
+}
+#box3{
+    grid-column: 3;
+    grid-row: 1;
+    background-color: #91C788;
+}
+#box4{
+    grid-column: 1;
+    grid-row: 2;
+    background-color: #1C6758;
+}
+#box5{
+    grid-column: 2;
+    grid-row: 2;
+    background-color: #3D8361;
+}
+#box6{
+    grid-column: 3;
+    grid-row: 2;
+    background-color: #91C788;
+}
+.box:hover{
+    height: 280px;
+    width: 500px;
+}
+.box .box1_image{
+    position: absolute;
+    height: 300px;
+    top: -10px;
+    left: 240px;
+    transform: scale(0);
+    transition: 0.5s;
+    transition-delay: 0s;
+}
+.box:hover .box1_image{
+    transform: scale(1);
+    position: relative;
+}
+.box:hover #box2_image{
+    position: absolute;
+    left: 260px;
+}
+.box:hover #box3_image{
+    position: absolute;
+    left: 210px;
+}
+.box:hover #box4_image{
+    position: absolute;
+    left: 210px;
+}
+.box:hover #box5_image{
+    position: absolute;
+    left: 225px;
+}
+.box:hover #box6_image{
+    position: absolute;
+    left: 260px;
+}
+.box:hover #boxcontent{
+    transform: scale(1);
+    position: relative;
+}
+.box #boxcontent{
+    position: absolute;
+    transform: scale(0);
+    height: 100%;
+    width: 100%;
+    top: 10px;
+    text-align: left;
+    font-size: 30px;
+}
+.box .boxtitle1{
+    font-size: 40px;
+    position: relative;
+    top: 50px;
+    left: 90px;
+    color: #62b48d;
+}
+.box:hover .boxtitle1{
+    position: absolute;
+    left: -20px;
+    top: 223px;
+    font-size: 30px;
+    transition: 0.7s;
+}
+.box .boxtitle2{
+    position: relative;
+    font-size: 40px;
+    width: 300px;
+    top: 30px;
+    left: 40px;
+}
+.box:hover .boxtitle2{
+    position: absolute;
+    top: 210px;
+    left: -55px;
+    font-size: 25px;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+}
+.box .boxtitle3{
+    position: relative;
+    font-size: 50px;
+    width: 300px;
+    top: 40px;
+    left: 40px;
+    color: #1C6758;
+}
+.box:hover .boxtitle3{
+    position: absolute;
+    top: 215px;
+    left: -67px;
+    font-size: 27px;
+    transition: 0.5s;
+    transition-delay: 0.1s;
+}
+.box .boxtitle4{
+    font-size: 40px;
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    color: #62b48d;
+}
+.box:hover .boxtitle4{
+    position: absolute;
+    left: 20px;
+    top: 223px;
+    font-size: 27px;
+    transition: 0.7s;
+}
+.box .boxtitle5{
+    font-size: 40px;
+    position: absolute;
+    top: 50px;
+    left: 90px;
+    color: rgb(148, 237, 136);
+}
+.box:hover .boxtitle5{
+    position: absolute;
+    left: 20px;
+    top: 223px;
+    font-size: 25px;
+    transition: 0.7s;
+}
+.box .boxtitle6{
+    font-size: 40px;
+    position: absolute;
+    top: 50px;
+    left: 55px;
+    color: #1C6758;
+}
+.box:hover .boxtitle6{
+    position: absolute;
+    left: 20px;
+    top: 223px;
+    font-size: 29px;
+    transition: 0.7s;
+}
+.box #buybutton1{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    border: 1px solid none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(204, 233, 211);
+    padding: 10px;
+    background: #3D8361;
+}
+.box:hover #buybutton1{
+    position: absolute;
+    left: 200px;
+    top: 220px;
+    color: #aefaa0;
+    transition: 0.6s;
+    transition-delay: 0.1s;
+    background: #3D8361;
+} 
+.box #buybutton2{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    border: 1px solid none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(204, 233, 211);
+    background: #1C6758;
+    padding: 10px;
+}
+.box:hover #buybutton2{
+    position: absolute;
+    left: 190px;
+    top: 220px;
+    transition: 0.6s;
+    transition-delay: 0.1s;
+    background: rgb(145, 199, 136);
+    color: #aefaa0;
+} 
+.box #buybutton3{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    border: 1px solid none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(204, 233, 211);
+    padding: 10px;
+    background: rgb(61, 131, 97);
+}
+.box:hover #buybutton3{
+    position: absolute;
+    left: 160px;
+    top: 210px;
+    color: #aefaa0;
+    transition: 0.6s;
+    transition-delay: 0.1s;
+    background: #3D8361;
+} 
+.box #buybutton4{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    border: 1px solid none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(204, 233, 211);
+    padding: 10px;
+    background: rgb(61, 131, 97);
+}
+.box:hover #buybutton4{
+    position: absolute;
+    left: 220px;
+    top: 215px;
+    color: #aefaa0;
+    transition: 0.6s;
+    transition-delay: 0.1s;
+    background: #3D8361;
+} 
+.box #buybutton5{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    border: 1px solid none;
+    border-radius: 20px;
+    font-size: 20px;
+    padding: 10px;
+    color: rgb(204, 233, 211);
+    background: #1C6758;
+}
+.box:hover #buybutton5{
+    position: absolute;
+    left: 165px;
+    top: 215px;
+    transition: 0.6s;
+    transition-delay: 0.1s;
+    background: rgb(145, 199, 136);
+    color: #aefaa0;
+
+} 
+.box #buybutton6{
+    position: absolute;
+    top: 65%;
+    left: 35%;
+    border: 1px solid none;
+    border-radius: 20px;
+    font-size: 20px;
+    color: rgb(204, 233, 211);
+    padding: 10px;
+    background: rgb(61, 131, 97);
+}
+.box:hover #buybutton6{
+    position: absolute;
+    left: 250px;
+    top: 215px;
+    color: #aefaa0;
+    transition: 0.6s;
+    transition-delay: 0.1s;
+    background: #3D8361;
+} 
+.box:hover a{
+    left: 100px;
+}
+.box:hover #boxcontent,.boxtitle1, .boxtitle2, .boxtitle3, .boxtitle4 .boxtitle5 .boxtitle6{
+    position: absolute;
+    width: 50%;
+    height: 80%;
+    top: 0px;
+    font-size: 25px;
+    text-align: left;
+    transition: 0.1s;
+}
+.box:hover #boxcontent{
+    position: absolute;
+    margin: 20px 0 0 20px;
+    font-size: 25px;
+    align-items: left;
+    width: 250px;
+}
+/* FOOTER */
+</style>
+<body>
+    <div class="background_color"></div>
+    <header class="navigation">
+        <div class="main_navigation">
+            <a href="" id="title">Green<span id="peace">Peace</span></a>
+            <div class="navigation_container">
+        <ul>
+            <li class="list">
+                <a href="">
+                    <span class="logo"><i class="fa-solid fa-house" id="logo"></i></span>
+                    <span class="title" id="home">Home</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="">
+                    <span class="logo"><i class="fa-solid fa-book-open" id="logo"></i></span>
+                    <span class="title">About</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="">
+                    <span class="logo"><i class="fa-solid fa-message" id="logo"></i></span>
+                    <span class="title">Contact</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="">
+                    <span class="logo"><i class="fa-solid fa-gears" id="logo"></i></span>
+                    <span class="title">Services</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="">
+                    <span class="logo"><i class="fa-solid fa-circle-user" id="logo"></i></span>
+                    <span class="title">Login</span>
+                </a>
+            </li>
+            <li class="list">
+                <a href="">
+                    <span class="logo"><i class="fa-solid fa-users" id="logo"></i></span>
+                    <span class="title" id="register">Register</span>
+                </a>
+            </li>
+        </ul>
+        </div>
+        <div class="font_logo">
+            <ul>
+                <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+            </ul>
+        </div>
+    </div>
+    </header>
+    <div class="container">
+        <img src="qwerty.png" id="birdy">
+        <img src="ytrewq.png" id="birdy_mirror">
+        <div class="main_container">
+            <p class="main_container_title" id="container_title">WELCOME TO <span id="green">GREEN</span><span id="peace">PEACE</span></p>
+            <div class="container_title">
+                <p id="save">SAVE THE ANIMALS</p>
+                <p id="plant">BY PLANTING TREES TOMORROW!</p>
+                <a href="">
+                <button id="join">JOIN NOW</button>
+                <button id="donate">DONATE NOW</button>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div id="footer">
+        <div class="main_footer">
+            <p>Green<span>Peace</span></p>
+            <div class="box_container">
+
+            <div class="box" id="box1">
+                <img src="velociraptor.png" class="box1_image" id="box1_image">
+                <p id="boxtitle" class="boxtitle1">Velociraptor</p>
+                <p id="boxcontent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nobis sit, rem</p>
+                <a href="" id="buybutton1">Buy now!</a>
+            </div>
+            <div class="box" id="box2">
+                <img src="tyrannosaurus_rex.png" class="box1_image" id="box2_image">
+                <p id="boxtitle" class="boxtitle2">Tyrannosaurus <br>Rex<br></p>
+                <p id="boxcontent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nobis sit, rem</p>
+                <a href="" id="buybutton2">Buy now!</a>
+            </div>
+            <div class="box" id="box3">
+                <img src="triceratops.png" class="box1_image" id="box3_image">
+                <p id="boxtitle" class="boxtitle3">Triceratops</p>
+                <p id="boxcontent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nobis sit, rem</p>
+                <a href="" id="buybutton3">Buy now!</a>
+            </div>
+            <div class="box" id="box4">
+                <img src="brachiosaurus.png" class="box1_image" id="box4_image">
+                <p id="boxtitle" class="boxtitle4">Branchiosaurus</p>
+                <p id="boxcontent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nobis sit, rem</p>
+                <a href="" id="buybutton4">Buy now!</a>
+            </div>
+            <div class="box" id="box5">
+                <img src="pteranodon.png" class="box1_image" id="box5_image">
+                <p id="boxtitle" class="boxtitle5">Pteranodon</p>
+                <p id="boxcontent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nobis sit, rem</p>
+                <a href="" id="buybutton5">Buy now!</a>
+            </div>
+            <div class="box" id="box6">
+                <img src="compsognathus.png" class="box1_image" id="box6_image">
+                <p id="boxtitle" class="boxtitle6">Compsognathus</p>
+                <p id="boxcontent">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus nobis sit, rem</p>
+                <a href="" id="buybutton6">Buy now!</a>
+            </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
